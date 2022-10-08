@@ -1,8 +1,8 @@
 import qrcode
 
-GREEN = (0,255,0)
-BLUE = (0,0,128)
-CREAM = (245,255,250)
+QR_GREEN = (0,255,0)
+QR_BLUE = (0,0,128)
+QR_CREAM = (245,255,250)
 
 
 MeusPerfis = {
@@ -13,7 +13,7 @@ MeusPerfis = {
 }
 
 if __name__ == '__main__':
-    cores = [('black', CREAM), ('red',CREAM), (BLUE, CREAM), ('black', GREEN)]
+    cores = [('black', QR_CREAM), ('red',QR_CREAM), (QR_BLUE, QR_CREAM), ('black', QR_GREEN)]
     for i, (meuqrcode, valor) in enumerate(MeusPerfis.items()):
         qr = qrcode.QRCode(None, 
                         qrcode.ERROR_CORRECT_H)
